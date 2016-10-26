@@ -9,21 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var index_1 = require('./components/filmList/index');
-var AppModule = (function () {
-    function AppModule() {
+var index_1 = require('./model/index');
+var FilmList = (function () {
+    function FilmList() {
+        var fightClub = new index_1.FilmModel('Fight Club', 'David Fincher', 1999);
+        var memento = new index_1.FilmModel('Memento', 'Christopher Nolan', 2000);
+        var matrix = new index_1.FilmModel('Matrix', 'Lilly Wachowski', 1999);
+        this.filmList = [fightClub, memento, matrix];
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, index_1.FilmList],
-            bootstrap: [app_component_1.AppComponent]
+    FilmList = __decorate([
+        core_1.Component({
+            selector: 'peliculas-list',
+            templateUrl: './app/components/filmList/view/index.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], FilmList);
+    return FilmList;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.FilmList = FilmList;
+//# sourceMappingURL=index.js.map
