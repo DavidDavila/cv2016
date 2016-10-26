@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 var Film = (function () {
     function Film() {
     }
+    Film.prototype.getCurrentFilm = function (film) {
+        this.currentFilm = film;
+    };
     Film = __decorate([
         core_1.Component({
             selector: 'film',

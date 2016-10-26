@@ -10,12 +10,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var index_1 = require('./../../services/index');
-index_1.FilmService;
 var FilmList = (function () {
     function FilmList(_filmService) {
         this._filmService = _filmService;
+        this.gotFilm = new core_1.EventEmitter();
         this.filmList = _filmService.getAllFilms();
     }
+    FilmList.prototype.getFilm = function (ev) {
+        var allLists = document.getElementsByTagName("ul");
+        for (var i = 0; i <= allLists.length; i++) {
+            if (allLists[i] === event.currentTarget) {
+                this.gotFilm.next(this._filmService.findFilm(i));
+                break;
+            }
+        }
+    };
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], FilmList.prototype, "gotFilm", void 0);
     FilmList = __decorate([
         core_1.Component({
             selector: 'film-list',

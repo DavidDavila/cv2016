@@ -16,6 +16,10 @@ var FilmService = (function () {
     FilmService.prototype.getAllFilms = function () {
         return mock_films_1.ALLFILMS;
     };
+    FilmService.prototype.findFilm = function (i) {
+        if (i === void 0) { i = 0; }
+        return this.getAllFilms()[i];
+    };
     FilmService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])

@@ -1,3 +1,13 @@
-Componente película
+<p *ngIf="!currentFilm" >
+	Click one film to edit.
+</p>
+<p *ngIf="currentFilm" >
+	Continue editing and see the "Two way data binding".
+</p>
+<div *ngIf="currentFilm" >
+	<input [(ngModel)]="currentFilm.title" type="text"  value={{currentFilm.title}}>
+	<input [(ngModel)]="currentFilm.director" type="text" value={{currentFilm.director}}>
+	<input [(ngModel)]="currentFilm.year" type="text" value={{currentFilm.year}}>
+</div>
 
-<film-list></film-list>
+<film-list  (gotFilm)="getCurrentFilm($event)"></film-list>

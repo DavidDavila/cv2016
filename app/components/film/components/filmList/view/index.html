@@ -1,4 +1,4 @@
-<ul *ngFor="let film of filmList" >
+<ul *ngFor="let film of filmList" (click)="getFilm(ev)"  (notify)="onNotify(film)" >
 	<li>{{film.title}}</li>
 	<li>{{film.director}}</li>
 	<li>{{film.year}}</li>

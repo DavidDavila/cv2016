@@ -7,4 +7,7 @@ export class FilmService{
 	getAllFilms(){
 		return ALLFILMS;
 	}
+	findFilm(i = 0){
+		return this.getAllFilms()[i];
+	}
 }
