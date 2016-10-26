@@ -1,12 +1,14 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
-import { FilmList } from './components/filmList/index';
+import { Film } from './components/film/index';
+import { FilmList } from './components/film/filmList/index';
+
 
  
 @NgModule({
   imports:      [ BrowserModule ],
-  declarations: [ AppComponent, FilmList ],
+  declarations: [ AppComponent, Film, FilmList ],
   bootstrap:    [ AppComponent ]
 })
  

@@ -19,12 +19,13 @@ var FilmList = (function () {
     }
     FilmList = __decorate([
         core_1.Component({
-            selector: 'peliculas-list',
-            templateUrl: './app/components/filmList/view/index.html'
+            selector: 'film-list',
+            templateUrl: './app/components/film/filmList/view/index.html'
         }), 
         __metadata('design:paramtypes', [])
     ], FilmList);
     return FilmList;
 }());
 exports.FilmList = FilmList;
+;
 //# sourceMappingURL=index.js.map
