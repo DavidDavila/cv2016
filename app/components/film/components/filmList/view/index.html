@@ -1,7 +1,11 @@
 <small>
 	Componente filmList
 </small>
-<ul *ngFor="let film of filmList" (click)="getFilm(ev)"  (notify)="onNotify(film)" >
+<ul *ngFor="let film of filmList"
+	(click)="getFilm(ev)"  
+	(notify)="onNotify(film)" 
+	[class.selected]="currentFilm == film" 
+	>
 	<li>{{film.title}}</li>
 	<li>{{film.director}}</li>
 	<li>{{film.year}}</li>

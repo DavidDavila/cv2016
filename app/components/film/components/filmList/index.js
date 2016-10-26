@@ -20,7 +20,8 @@ var FilmList = (function () {
         var allLists = document.getElementsByTagName("ul");
         for (var i = 0; i <= allLists.length; i++) {
             if (allLists[i] === event.currentTarget) {
-                this.gotFilm.next(this._filmService.findFilm(i));
+                this.currentFilm = this._filmService.findFilm(i);
+                this.gotFilm.next(this.currentFilm);
                 break;
             }
         }
@@ -33,6 +34,7 @@ var FilmList = (function () {
         core_1.Component({
             selector: 'film-list',
             templateUrl: './app/components/film/components/filmList/view/index.html',
+            styleUrls: ['./app/components/film/components/filmList/view/css/index.css'],
             providers: [index_1.FilmService]
         }), 
         __metadata('design:paramtypes', [index_1.FilmService])

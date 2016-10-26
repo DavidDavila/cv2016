@@ -4,14 +4,16 @@ import { FilmService } from './../../services/index';
 @Component({
 	selector: 'film-list',
 	templateUrl: './app/components/film/components/filmList/view/index.html',
+	styleUrls:['./app/components/film/components/filmList/view/css/index.css'],
 	providers: [FilmService]
 })
 
 export class FilmList {
-
+	
 	@Output() gotFilm = new EventEmitter();
 
 	public filmList;
+	public currentFilm;
 
 	constructor(private _filmService: FilmService) {
 		
@@ -23,7 +25,8 @@ export class FilmList {
 		let allLists = document.getElementsByTagName("ul");
 		for(let i=0; i <= allLists.length; i++){
 			if(allLists[i]===event.currentTarget){ 
-				this.gotFilm.next( this._filmService.findFilm(i) )
+				this.currentFilm = this._filmService.findFilm(i)
+				this.gotFilm.next( this.currentFilm )
 				break;
 			}
 		}
