@@ -9,22 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var index_1 = require('./components/film/index');
-var index_2 = require('./components/film/components/filmList/index');
-var AppModule = (function () {
-    function AppModule() {
+var index_1 = require('./../../services/index');
+index_1.FilmService;
+var FilmList = (function () {
+    function FilmList(_filmService) {
+        this._filmService = _filmService;
+        this.filmList = _filmService.getAllFilms();
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, index_1.Film, index_2.FilmList],
-            bootstrap: [app_component_1.AppComponent]
+    FilmList = __decorate([
+        core_1.Component({
+            selector: 'film-list',
+            templateUrl: './app/components/film/components/filmList/view/index.html',
+            providers: [index_1.FilmService]
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+        __metadata('design:paramtypes', [index_1.FilmService])
+    ], FilmList);
+    return FilmList;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.FilmList = FilmList;
+;
+//# sourceMappingURL=index.js.map

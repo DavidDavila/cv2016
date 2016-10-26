@@ -2,7 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
 import { Film } from './components/film/index';
-import { FilmList } from './components/film/filmList/index';
+import { FilmList } from './components/film/components/filmList/index';
 
 
  
