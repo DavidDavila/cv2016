@@ -10,16 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var index_1 = require('./../../services/index');
+var index_2 = require('./../../model/index');
 var FilmList = (function () {
     function FilmList(_filmService) {
         this._filmService = _filmService;
         this.gotFilm = new core_1.EventEmitter();
         this.filmList = _filmService.getAllFilms();
     }
-    FilmList.prototype.getFilm = function (ev) {
+    FilmList.prototype.getFilm = function (event) {
         var allLists = document.getElementsByClassName('filmList');
         for (var i = 0; i <= allLists.length; i++) {
-            if (allLists[i] === event.currentTarget) {
+            if (allLists[i] === event.currentTarget.parentElement) {
                 this.currentFilm = this._filmService.findFilm(i);
                 this.gotFilm.next(this.currentFilm);
                 break;
@@ -30,6 +31,10 @@ var FilmList = (function () {
         core_1.Output(), 
         __metadata('design:type', Object)
     ], FilmList.prototype, "gotFilm", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', index_2.FilmModel)
+    ], FilmList.prototype, "currentFilm", void 0);
     FilmList = __decorate([
         core_1.Component({
             selector: 'film-list',

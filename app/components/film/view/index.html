@@ -12,6 +12,7 @@
 	<input [(ngModel)]="currentFilm.title" type="text"  value={{currentFilm.title}}>
 	<input [(ngModel)]="currentFilm.director" type="text" value={{currentFilm.director}}>
 	<input [(ngModel)]="currentFilm.year" type="text" value={{currentFilm.year}}>
+	<button (click)="currentFilm = undefined">Close</button>
 </div>
 
-<film-list  (gotFilm)="getCurrentFilm($event)"></film-list>
+<film-list  (gotFilm)="getCurrentFilm($event)" [currentFilm]="currentFilm" ></film-list>

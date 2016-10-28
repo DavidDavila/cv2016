@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { AddFilm } from './components/addFilm/index';
 import { FilmList } from './components/filmList/index';
+import { FilmModel } from './model/index';
+
 
 @Component({
 	selector: 'film',
@@ -8,7 +10,7 @@ import { FilmList } from './components/filmList/index';
 })
 
 export class Film {
-	public currentFilm;
+	public currentFilm: FilmModel;
 	constructor() {
 		
 	}

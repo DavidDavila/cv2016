@@ -12,21 +12,18 @@ import { FilmModel as Film} from './../../model/index';
 export class FilmList {
 	
 	@Output() gotFilm = new EventEmitter();
+	@Input() currentFilm: Film;
 
 	public filmList:Array<Film>;
-	public currentFilm: Film;
 
 	constructor(private _filmService: FilmService) {
-		
-		this.filmList = _filmService.getAllFilms();		
-
+		this.filmList = _filmService.getAllFilms();
 	}
 
-	getFilm(ev){
+	getFilm(event) {
 		let allLists = document.getElementsByClassName('filmList');
-	
 		for(let i=0; i <= allLists.length; i++){
-			if(allLists[i]===event.currentTarget){ 
+			if( allLists[i] === event.currentTarget.parentElement ) { 
 				this.currentFilm = this._filmService.findFilm(i)
 				this.gotFilm.next( this.currentFilm )
 				break;

@@ -15,10 +15,11 @@ var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var index_1 = require('./views/home/index');
 var index_2 = require('./views/otherProjects/index');
-var index_3 = require('./components/menu/index');
-var index_4 = require('./components/film/index');
-var index_5 = require('./components/film/components/filmList/index');
-var index_6 = require('./components/film/components/addFilm/index');
+var index_3 = require('./views/oneFilm/index');
+var index_4 = require('./components/menu/index');
+var index_5 = require('./components/film/index');
+var index_6 = require('./components/film/components/filmList/index');
+var index_7 = require('./components/film/components/addFilm/index');
 var router_2 = require('./router');
 var AppModule = (function () {
     function AppModule() {
@@ -26,7 +27,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, router_1.RouterModule.forRoot(router_2.Routes)],
-            declarations: [app_component_1.AppComponent, index_3.Menu, index_1.Home, index_2.OtherProjects, index_4.Film, index_6.AddFilm, index_5.FilmList],
+            declarations: [app_component_1.AppComponent, index_4.Menu, index_1.Home, index_3.OneFilm, index_2.OtherProjects, index_5.Film, index_7.AddFilm, index_6.FilmList],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
