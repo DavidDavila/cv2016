@@ -1,0 +1,8 @@
+<small>
+	Componente Menu
+</small>
+<header>
+	<ul *ngFor="let item of menuList">
+		<li><a routerLink={{item.link}}>{{item.name}}</a></li>
+	</ul>
+</header>
