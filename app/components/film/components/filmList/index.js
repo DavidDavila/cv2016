@@ -17,7 +17,7 @@ var FilmList = (function () {
         this.filmList = _filmService.getAllFilms();
     }
     FilmList.prototype.getFilm = function (ev) {
-        var allLists = document.getElementsByTagName("ul");
+        var allLists = document.getElementsByClassName('filmList');
         for (var i = 0; i <= allLists.length; i++) {
             if (allLists[i] === event.currentTarget) {
                 this.currentFilm = this._filmService.findFilm(i);

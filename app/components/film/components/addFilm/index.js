@@ -9,22 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var OtherProjects = (function () {
-    function OtherProjects() {
-        this.menuList = [
-            { name: 'Boilerplate React Redux', link: 'https://github.com/DavidDavila/boilerplate-redux' },
-            { name: 'BoilerPlate React Redux Async with ReactToolBox', link: 'https://github.com/DavidDavila/BoilerPlate-Redux-Async-ReactToolBox' },
-            { name: 'Angular2 HelloWorld', link: 'https://github.com/DavidDavila/Angular2-HelloWorld' }
-        ];
+var index_1 = require('./../../services/index');
+var index_2 = require('./../../model/index');
+var AddFilm = (function () {
+    function AddFilm(_filmService) {
+        this._filmService = _filmService;
+        this.showForm = false;
     }
-    OtherProjects = __decorate([
+    AddFilm.prototype.createFlim = function (title, director, year) {
+        var newFilm = new index_2.FilmModel(title, director, year);
+        this._filmService.insertFilm(newFilm);
+        this.showForm = !this.showForm;
+    };
+    AddFilm = __decorate([
         core_1.Component({
-            templateUrl: './app/views/other-projects/view/index.html',
-            styleUrls: ['./app/views/other-projects/view/css/index.css']
+            selector: 'add-film',
+            templateUrl: './app/components/film/components/addFilm/view/index.html',
+            styleUrls: ['./app/components/film/components/addFilm/view/css/index.css'],
+            providers: [index_1.FilmService]
         }), 
-        __metadata('design:paramtypes', [])
-    ], OtherProjects);
-    return OtherProjects;
+        __metadata('design:paramtypes', [index_1.FilmService])
+    ], AddFilm);
+    return AddFilm;
 }());
-exports.OtherProjects = OtherProjects;
+exports.AddFilm = AddFilm;
 //# sourceMappingURL=index.js.map

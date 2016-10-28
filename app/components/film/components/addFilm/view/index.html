@@ -1,0 +1,10 @@
+<div>
+	<small>Componente addFilm</small>
+	<button (click)="showForm=!showForm">Add Film</button>
+	<div *ngIf="showForm">
+		<div><label for="">Title</label><input type="text" #title></div>
+		<div><label for="">Director</label><input type="text" #director></div>
+		<div><label for="">Year</label><input type="number" #year></div>
+		<button (click)="createFlim(title.value, director.value, year.value )">Submit</button>
+	</div>
+</div>

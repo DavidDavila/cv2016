@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AddFilm } from './components/addFilm/index';
 import { FilmList } from './components/filmList/index';
 
 @Component({

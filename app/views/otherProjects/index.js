@@ -9,25 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var mock_films_1 = require('./mocks/mock.films');
-var FilmService = (function () {
-    function FilmService() {
+var OtherProjects = (function () {
+    function OtherProjects() {
+        this.menuList = [
+            { name: 'Boilerplate React Redux', link: 'https://github.com/DavidDavila/boilerplate-redux' },
+            { name: 'BoilerPlate React Redux Async with ReactToolBox', link: 'https://github.com/DavidDavila/BoilerPlate-Redux-Async-ReactToolBox' },
+            { name: 'Angular2 HelloWorld', link: 'https://github.com/DavidDavila/Angular2-HelloWorld' }
+        ];
     }
-    FilmService.prototype.getAllFilms = function () {
-        return mock_films_1.ALLFILMS;
-    };
-    FilmService.prototype.findFilm = function (i) {
-        if (i === void 0) { i = 0; }
-        return this.getAllFilms()[i];
-    };
-    FilmService.prototype.insertFilm = function (newFilm) {
-        return mock_films_1.ALLFILMS.push(newFilm);
-    };
-    FilmService = __decorate([
-        core_1.Injectable(), 
+    OtherProjects = __decorate([
+        core_1.Component({
+            templateUrl: './app/views/otherProjects/view/index.html',
+            styleUrls: ['./app/views/otherProjects/view/css/index.css']
+        }), 
         __metadata('design:paramtypes', [])
-    ], FilmService);
-    return FilmService;
+    ], OtherProjects);
+    return OtherProjects;
 }());
-exports.FilmService = FilmService;
+exports.OtherProjects = OtherProjects;
 //# sourceMappingURL=index.js.map

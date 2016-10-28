@@ -5,6 +5,7 @@
 	(click)="getFilm(ev)"  
 	(notify)="onNotify(film)" 
 	[class.selected]="currentFilm == film" 
+	class="filmList"
 	>
 	<li>{{film.title}}</li>
 	<li>{{film.director}}</li>

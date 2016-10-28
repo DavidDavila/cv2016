@@ -6,12 +6,13 @@ import { RouterModule }   from '@angular/router';
 import { AppComponent }  from './app.component';
 
 import { Home }  from './views/home/index';
-import { OtherProjects }  from './views/other-projects/index';
+import { OtherProjects }  from './views/otherProjects/index';
 
 
 import { Menu } from './components/menu/index';
 import { Film } from './components/film/index';
 import { FilmList } from './components/film/components/filmList/index';
+import { AddFilm } from './components/film/components/addFilm/index';
 
 import { Routes } from './router';
 
@@ -19,7 +20,7 @@ import { Routes } from './router';
  
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(Routes)],
-  declarations: [ AppComponent, Menu, Home, OtherProjects, Film, FilmList ],
+  declarations: [ AppComponent, Menu, Home, OtherProjects, Film, AddFilm, FilmList ],
   bootstrap:    [ AppComponent ]
 })
  

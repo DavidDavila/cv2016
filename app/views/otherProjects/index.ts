@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-	templateUrl: './app/views/other-projects/view/index.html',
-	styleUrls: ['./app/views/other-projects/view/css/index.css']
+	templateUrl: './app/views/otherProjects/view/index.html',
+	styleUrls: ['./app/views/otherProjects/view/css/index.css']
 })
 export class OtherProjects {
 	public menuList:Array<any>;
