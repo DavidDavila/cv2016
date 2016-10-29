@@ -1,0 +1,17 @@
+#autocomplete{
+	display: table;
+	width:100%;
+	height:20vh;
+	text-align:center;
+}
+#autocomplete>section{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#autocomplete>section>article{
+	width: 70%;
+	margin:0 auto;
+}
+#autocomplete>section>article{
+}

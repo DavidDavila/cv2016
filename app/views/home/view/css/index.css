@@ -1,0 +1,40 @@
+#home{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+}
+#home >section{
+	position: relative;
+}
+#home img{
+	position: fixed;
+	top: 0;
+	width: 40%;
+	min-height: 100vh;
+	left: 50%;
+	margin-left:-20%;
+	object-fit: contain;
+	object-position: center;
+	z-index: 0;
+}
+.msg{
+	position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    padding: 10vw;
+    display: table;
+}
+.msg >div{
+	display: table-cell;
+	vertical-align: middle;
+}
+h2{
+	opacity: 0;
+}
+h3{
+	opacity: 0;
+}
+a.md-primary.md-hue-1 {
+	opacity: 0;
+}

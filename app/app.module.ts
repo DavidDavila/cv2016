@@ -3,24 +3,25 @@ import { FormsModule }   from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, ActivatedRoute }   from '@angular/router';
 
+import {MaterialModule} from '@angular/material';
+
 import { AppComponent }  from './app.component';
 
 import { Home }  from './views/home/index';
-import { OtherProjects }  from './views/otherProjects/index';
-import { OneFilm }  from './views/oneFilm/index';
+import { Interview }  from './views/interview/index';
+
 
 import { Menu } from './components/menu/index';
-import { Film } from './components/film/index';
-import { FilmList } from './components/film/components/filmList/index';
-import { AddFilm } from './components/film/components/addFilm/index';
+import { Dropdown } from './components/dropdown/index';
+import { Autocomplete } from './components/autocomplete/index';
+import { Projects } from './components/projects/index';
 
 import { Routes } from './router';
 
-
  
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(Routes)],
-  declarations: [ AppComponent, Menu, Home, OneFilm, OtherProjects, Film, AddFilm, FilmList ],
+  imports:      [ BrowserModule,  MaterialModule.forRoot(), FormsModule, RouterModule.forRoot(Routes)],
+  declarations: [ AppComponent, Menu, Home, Interview, Projects, Dropdown, Autocomplete ],
   bootstrap:    [ AppComponent ]
 })
  

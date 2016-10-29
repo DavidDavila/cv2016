@@ -1,10 +1,9 @@
 import { Home } from './views/home/index';
-import { OneFilm } from './views/oneFilm/index';
-import { OtherProjects } from './views/otherProjects/index';
+import { Interview } from './views/interview/index';
 
 
 export const Routes: any = [
 	{ path: '', component: Home },
-	{ path: ':title', component: OneFilm },
-	{ path: 'other-projects', component: OtherProjects },
+	{ path: 'interview', component: Interview },
+	{ path: ':company', component: Home },
 ] 

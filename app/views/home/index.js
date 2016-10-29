@@ -11,10 +11,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var Home = (function () {
     function Home() {
+        this.title = 'Welcome,';
+        this.subTitle = 'What are you interested in?';
     }
+    Home.prototype.ngOnInit = function () {
+        var s = skrollr.init();
+    };
+    Home.prototype.download = function () {
+        this.title = "Great! ";
+        this.subTitle = "Anything else?";
+    };
+    Home.prototype.ngOnDestroy = function () {
+        skrollr.init().destroy();
+    };
     Home = __decorate([
         core_1.Component({
-            templateUrl: './app/views/home/view/index.html'
+            templateUrl: './app/views/home/view/index.html',
+            styleUrls: ['./app/views/home/view/css/index.css']
         }), 
         __metadata('design:paramtypes', [])
     ], Home);

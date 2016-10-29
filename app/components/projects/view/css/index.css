@@ -1,0 +1,35 @@
+#projects{
+	width: 80%;
+	margin:0 auto;
+}
+#projects >article{
+	height: 80vh;
+	width: 100%;
+	display: table;
+}
+#projects >article>div{
+	
+	display: table-cell;
+	vertical-align: middle;;
+}
+#projects >article>div>div{
+	
+	width: 50vw;
+	height: 30vw;
+	overflow: hidden;
+
+}
+#projects >article>div>div:nth-child(odd){
+	float:left;
+	padding: 6vw 12vw;
+	position: relative;
+	z-index: 1;
+}
+#projects >article>div>div:nth-child(even){
+	float:right;
+	background: #eee;
+}
+#projects h3{
+    font-weight: 300;
+    margin-bottom: 5vw;
+}	

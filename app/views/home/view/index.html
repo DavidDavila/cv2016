@@ -1,5 +1,18 @@
-<small>
-	Componente App
-</small>
-<h1>Film Aplication</h1>
-<film></film>
+<section id="home">
+	<article  data-0="transform:scale(3.5) translateX(-0%) translateY(5%)" data-600="transform: scale(1.41) translateX(1.2%) translateY(0.5%);" data-1200="transform:scale(1) translateX(27.2%) translateY(0%)">
+		
+	
+	<dropdown></dropdown>
+	<img src="./app/views/home/view/css/bg/mac.png">
+	</article>
+	<article  class="msg">
+		<div>
+			<h2  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">{{this.title}}
+			</h2>
+			<h3  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">{{this.subTitle}}</h3>
+			<a (click)="download()" href="./assets/downloads/DavidDavilaPino_CV.pdf" download md-button class="md-primary md-hue-1"  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">I want to see your CV</a>
+			<a [routerLink]="['/interview']" md-button class="md-primary md-hue-1"  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">I want to make an interview</a>
+
+		</div>
+	</article>
+</section>

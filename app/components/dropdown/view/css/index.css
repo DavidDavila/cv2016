@@ -1,0 +1,45 @@
+#dropdown{
+	position: relative;
+	z-index: 1;
+	display: table;
+	margin-left: 31.7%;
+	height: 100%;
+	width: 36.7%;
+
+}
+#dropdown>section{
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+
+    height: 100vh;
+}
+#dropdown>section>article{
+	height: 20.6vw;
+    background-image: url(./app/components/dropdown/view/css/bg/bg.jpg);
+    background-size: 150%;
+    background-position: center;
+    margin-top: -21.6%;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+#dropdown>section>article>div{
+	display: table-cell;
+	color: #fff;
+	vertical-align: middle;
+	background: rgba(77,77,77, 0.7);
+    text-transform: uppercase;
+
+}
+#dropdown>section>article>div h1{
+	font-size: 1.4vw;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#dropdown>section>article>div p{
+    color: #d6a41d;
+    font-weight: 300;
+    font-size: 0.4vw;
+}
