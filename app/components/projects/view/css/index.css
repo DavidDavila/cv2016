@@ -1,35 +1,59 @@
 #projects{
-	width: 80%;
+
 	margin:0 auto;
+}#projects >header{
+	display: table;
+	height: 20vw;
+	text-align: center;
+	background: #eee;
+	width: 100%;
+}
+#projects >header>div{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+#projects >header>div>p{
+	font-family: 'Arbutus Slab', serif;
+}
+#projects >header>div>p{
 }
 #projects >article{
-	height: 80vh;
-	width: 100%;
+	width: 80%;
 	display: table;
+	margin: 0 auto 6vw auto;
 }
 #projects >article>div{
-	
-	display: table-cell;
-	vertical-align: middle;;
+	padding-bottom: 200px;
 }
 #projects >article>div>div{
 	
 	width: 50vw;
 	height: 30vw;
+	padding: 6vw 12vw;
 	overflow: hidden;
+	background: #eee;
+	margin: 6vw 0vw;
+}
+#projects >article>div>div.left{
+	float:left;
+	
+}
+#projects >article>div>div.right{
+	float:right;
 
 }
-#projects >article>div>div:nth-child(odd){
-	float:left;
-	padding: 6vw 12vw;
+#projects >article>div>div.text{
 	position: relative;
 	z-index: 1;
-}
-#projects >article>div>div:nth-child(even){
-	float:right;
-	background: #eee;
+	background: none;
 }
 #projects h3{
     font-weight: 300;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
 }	
+.map{
+	padding:0 !important;
+	float: none !important;
+    clear: both;
+}
