@@ -3,6 +3,10 @@
 	height: 100vh;
 	position: fixed;
 }
+#home.out article.skrollable {
+    opacity: 0;
+    transition: opacity 300ms linear 1200ms;
+}
 #home >section{
 	position: relative;
 }

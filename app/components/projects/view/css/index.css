@@ -1,59 +1,146 @@
-#projects{
-
-	margin:0 auto;
-}#projects >header{
-	display: table;
-	height: 20vw;
-	text-align: center;
-	background: #eee;
+#menu{
 	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
 }
-#projects >header>div{
+#menu >article{
+	width: calc(50% - 2px);
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#menu >article>a:hover>video{
+	-webkit-filter: blur(0px) contrast(1);
+    filter: blur(0px) contrast(1);
+}
+#menu >article:nth-child(2){
+	position: absolute;
+	width: 760px;
+	z-index: 2;
+	left: 50%;
+	margin-left: -380px;
+}
+#menu >article:nth-child(2)>a:before{
+	content: '';
+	width: 0;
+	z-index: -2;
+    position: absolute;
+	height: 0;
+	display: block;
+	border-style: solid;
+   	border-width: 100vh 380px 0 380px;
+	border-color: #fff transparent transparent transparent;
+}
+#menu >article:nth-child(2)>a>div{
+	vertical-align: top;
+    padding: 3vw 8vw;
+
+	opacity: 0;
+	transition: opacity 1000ms linear 00ms;
+}
+#menu >article:nth-child(2)>a>div>h1{
+	margin-bottom: 2.5vmax;
+}
+#menu >article:nth-child(2)>a>div>p {
+	font-size: 0.9vw;
+	line-height: 1.4vw;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+#menu >article:nth-child(2)>a>div>span#menu{
+	width: 25px;
+	height: 25px;
+	padding:20px 0;
+	display: block;
+    margin: 0 auto;
+    cursor: pointer;
+	margin-bottom: 5vmax;
+}
+#menu >article:nth-child(2)>a>div>span#menu>span{
+	display: block;
+	vertical-align: middle;
+	background-color: #d6a41d;
+	width: 25px;
+	height: 2px;
+	position: relative;
+}
+#menu >article:nth-child(2)>a>div>span#menu>span:before{
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	top: 0;
+	left: 0;
+	content: '';
+	transform: translateY(-5px);
+	background-color: #d6a41d;
+}
+#menu >article:nth-child(2)>a>div>span#menu>span:after{
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	top: 0;
+	left: 0;
+	content: '';
+	transform: translateY(5px);
+	background-color: #d6a41d
+}
+#menu >article:nth-child(2)>a>div>.button{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -44px;
+    margin-top: -24px;
+}
+#menu >article>a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	display: table;
+	text-align: center
+}
+#menu >article>a>video{
+	position: absolute;
+	top: 0%;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: 100vh;
+	z-index: -1000;
+	overflow: hidden;
+	-webkit-filter: blur(0px) contrast(0.7);
+	filter: blur(0px) contrast(0.7);
+	transition: filter 1000ms;
+}
+#menu >article>a>div{
 	display: table-cell;
 	vertical-align: middle;
-	width: 100%;
 }
-#projects >header>div>p{
-	font-family: 'Arbutus Slab', serif;
-}
-#projects >header>div>p{
-}
-#projects >article{
-	width: 80%;
-	display: table;
-	margin: 0 auto 6vw auto;
-}
-#projects >article>div{
-	padding-bottom: 200px;
-}
-#projects >article>div>div{
+
+
+#menu >article:nth-child(2)>a>div> .button{
 	
-	width: 50vw;
-	height: 30vw;
-	padding: 6vw 12vw;
-	overflow: hidden;
-	background: #eee;
-	margin: 6vw 0vw;
-}
-#projects >article>div>div.left{
-	float:left;
-	
-}
-#projects >article>div>div.right{
-	float:right;
+    border-bottom: 2px solid #d6a41d;
+    color: #d6a41d;
 
 }
-#projects >article>div>div.text{
-	position: relative;
-	z-index: 1;
-	background: none;
+#menu >article:nth-child(2)>a>div> .button>b:after,#menu >article:nth-child(2)>a>div> .button>b:before{
+	
+    border-bottom: 2px solid #d6a41d;
+    border-top: 2px solid #d6a41d;
+
 }
-#projects h3{
-    font-weight: 300;
-    margin-bottom: 2vw;
-}	
-.map{
-	padding:0 !important;
-	float: none !important;
-    clear: both;
+#menu >article:nth-child(2)>a>div> .button>b:after{
+
+	 border-left:2px solid #d6a41d;
+}
+#menu >article:nth-child(2)>a>div> .button>b:before{
+
+	 border-right:2px solid #d6a41d;
+
+}
+#menu.open  >article:nth-child(2)>a>div{
+	opacity: 1;
 }

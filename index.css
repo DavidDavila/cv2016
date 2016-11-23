@@ -46,9 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body{
-	height: 1000px;
-}
 *{
 	box-sizing: border-box;
     -webkit-text-size-adjust: none;
@@ -97,4 +94,69 @@ a.md-primary.md-hue-1 {
 	width: 100vw;
 	height: 30vw; 
 	margin-bottom: 100px;
+}
+.button{
+	line-height: 40px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+
+}
+.button>b:after,.button>b:before{
+	display: block;
+    width: 20px;
+    content: '';
+    position: absolute;
+    height: 43px;
+   	top: 0;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    border-top: 2px solid rgba(255,255,255,0.5);
+
+}
+.button>b:after{
+	 left: -22px;
+	 border-left:2px solid rgba(255,255,255,0.5);
+}
+.button>b:before{
+	 right: -22px;
+	 border-right:2px solid rgba(255,255,255,0.5);
+
+}
+.button:after{
+	content: 'About';
+    position: absolute;
+    top: -20px;
+    font-size: 0.8vw;
+    left: 7px;
+    text-transform: initial;
+    font-family: 'Arbutus Slab';
+    font-style: italic;
+
+}
+.dark.button{
+	
+    border-bottom: 2px solid #d6a41d;
+    color: #d6a41d;
+
+}
+.dark.button>b:after,.dark.button>b:before{
+	
+    border-bottom: 2px solid #d6a41d;
+    border-top: 2px solid #d6a41d;
+
+}
+.dark.button>b:after{
+
+	 border-left:2px solid #d6a41d;
+}
+.dark.button>b:before{
+
+	 border-right:2px solid #d6a41d;
+
 }

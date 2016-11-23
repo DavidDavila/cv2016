@@ -1,46 +1,46 @@
-<section id="projects">
-	<header>
-		<div>
-			<h2>Hobbies</h2>
-			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quod cupiditate hic!</h4>
-		</div>
-	</header>
+<section id="menu">
 	<article>
-		<div>
-			<div   class="left text" data-0="transform: translateY(0%)" data-1300="transform: translateY(150%)">
-
-				<h3>Drawing</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, excepturi, veniam. Quisquam vero voluptatem, in at sequi ratione accusantium suscipit aliquam laborum quod, iste animi delectus iure! Sequi, quibusdam, molestiae.</p>
+		<a [routerLink]="['/education']">
+			<div>
+				<button class="button">
+					<b>EDUCATION</b>
+				</button>
 			</div>
-
-			<div  class="right" data-0="transform: translateY(0%)" data-1300="transform: translateY(-150%)" >
-				<img src="" alt="">
-			</div>
-		</div>
-	</article>
-	<article>
-		<div>
-			<div  class="right text"  data-1100="transform: translateY(0%)" data-2900="transform: translateY(100%)" >
-				<h3>Writing</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam deleniti error repellat, quaerat illum voluptatibus harum, doloribus rerum accusantium omnis alias dolore sunt veritatis nemo aliquam officia nisi inventore itaque.</p>
-			</div>
-
-			<div  class="left" data-1300="transform: translateY(0%)" data-2600="transform: translateY(-141%)">
-				<img src="" alt="">
-			</div>
-		</div>
-	</article>
-	<article>
-		<div>
-			<div class="left text"  data-2000="transform: translateY(-70%)" data-2700="transform: translateY(0%)" data-3300="transform: translateY(70%)">
-
-				<h3>Traveling</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magni corporis aliquam esse asperiores saepe fugit, dolore, culpa vitae in eligendi totam! Consequatur et molestias magnam sunt incidunt provident, quas.</p>
-			</div>
-			<div  class="map"  data-2500="transform: translateY(20%); width:0%;" data-3400="transform: translateY(51%); width:100%">
-					<div id="map_canvas"></div>
 			
-				</div>
-		</div>
+			<video autoplay="yes" loop>
+			 	<source src="./assets/video/studying.mp4" type="video/mp4"> 
+			</video>
+		</a>
 	</article>
+	<article>
+		<a>		
+			<div>
+				<h1>David Dávila</h1>
+				<span id="menu">
+					<span></span>
+				</span>
+				<p>I´m a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus consectetur doloremque deleniti!</p>
+			
+				<button class="button dark" [routerLink]="['/myself']">
+					<b>Myself</b>
+				</button>
+			</div>
+		</a>
+		
+	</article>
+	<article>
+		<a [routerLink]="['/works']">
+			<div>
+				<button class="button">
+					<b>WORKS</b>
+				</button>	
+			</div>	
+		
+			<video autoplay="yes" loop>
+			 	<source src="./assets/video/working.mp4" type="video/mp4"> 
+			</video>
+		</a>
+		
+	</article>
+	
 </section>

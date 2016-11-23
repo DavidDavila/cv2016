@@ -11,7 +11,7 @@
 			</h2>
 			<h3  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">{{this.subTitle}}</h3>
 			<a (click)="download()" href="./assets/downloads/DavidDavilaPino_CV.pdf" download md-button class="md-primary md-hue-1"  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">I want to see your CV</a>
-			<a [routerLink]="['/interview']" md-button class="md-primary md-hue-1"  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">I want to make an interview</a>
+			<a (click)="goTo()" md-button class="md-primary md-hue-1"  data-700="opacity:0; transform: translateY(0.5%);" data-1200="opacity:1; transform:translateY(-20%)">I want to make an interview</a>
 
 		</div>
 	</article>
