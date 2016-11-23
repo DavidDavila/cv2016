@@ -10,10 +10,27 @@
 	height: 100%;
 	position: relative;
 	overflow: hidden;
+	transition: 1600ms all cubic-bezier(1,0.4,0.4,1) 0ms;
 }
 #menu >article>a:hover>video{
 	-webkit-filter: blur(0px) contrast(1);
     filter: blur(0px) contrast(1);
+}
+#menu.open >article:nth-child(1){
+	 shape-inside:polygon(0vw 0vh, 25vw 0vh, 50vw 100vh, 0vw 100vh);
+	-webkit-clip-path: polygon(0vw 0vh, 25vw 0vh, 50vw 100vh, 0vw 100vh);
+}
+#menu.open >article:nth-child(3){
+	 shape-inside:polygon( 50vw 0vh, 50vw 100vh,0vw 100vh, 25vw 0vh);
+	-webkit-clip-path:polygon( 50vw 0vh, 50vw 100vh,0vw 100vh, 25vw 0vh);
+}
+#menu >article:nth-child(1){
+	 shape-inside:polygon(0vw 0vh, 0vw 0vh, 0vw 100vh, 0vw 100vh);;
+	     -webkit-clip-path: polygon(0vw 0vh, 0vw 0vh, 0vw 100vh, 0vw 100vh);
+}
+#menu >article:nth-child(3){
+	 shape-inside:polygon( 100vw -100vh, 50vw 100vh,50vw 100vh, 50vw 100vh);
+	-webkit-clip-path: polygon( 50vw 0vh, 50vw 100vh,50vw 100vh, 50vw 0vh);
 }
 #menu >article:nth-child(2){
 	position: absolute;
@@ -23,15 +40,15 @@
 	margin-left: -380px;
 }
 #menu >article:nth-child(2)>a:before{
-	content: '';
-	width: 0;
-	z-index: -2;
+/* 	content: '';
+width: 0;
+z-index: -2;
     position: absolute;
-	height: 0;
-	display: block;
-	border-style: solid;
+height: 0;
+display: block;
+border-style: solid;
    	border-width: 100vh 380px 0 380px;
-	border-color: #fff transparent transparent transparent;
+border-color: #fff transparent transparent transparent; */
 }
 #menu >article:nth-child(2)>a>div{
 	vertical-align: top;
