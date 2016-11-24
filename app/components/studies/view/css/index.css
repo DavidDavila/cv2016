@@ -54,10 +54,14 @@
      animation-timing-function: cubic-bezier(0.7, 1, 1, 1);
  }
 }
-
+.close{
+	position: fixed;
+	right: 30px;
+	top: 30px;
+}
 #studies{
 	width: 100%;
-	max-height: 100vh;
+	max-height: 130vh;
 	overflow: scroll;
 	background-color: #fff;
 	-webkit-clip-path: polygon(0vw 0vh, 0vw 100vh, 100vw 100vh, 0vw 100vh);
@@ -66,5 +70,39 @@
 	animation-direction: normal; /* or: normal */
 	animation-fill-mode: both; /* or: backwards, both, none */
 	animation-delay: 1.3s;
-	padding: 10vmax;
+	display: table;
+	background-attachment: fixed;
+	background-blend-mode: luminosity;
+	background-color: #fff;
+	background-image: url("https://pixabay.com/get/eb3cb90621fd1c22d9584518a33219c8b66ae3d111b1114095f7c770/mountain-298999_1920.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg{
+	width: 100%;
+	text-align: center;
+	mix-blend-mode: screen;	
+	display: table-cell;
+	vertical-align: middle;
+}
+.bg:before{
+	position: absolute;
+	content: '';
+	width: 0px;
+	height: 0;
+	display: block;
+	border-style: solid;
+	border-width: 100vh 100vw 0 0;
+	border-color: #d6a41d rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+.bg >h1{
+	position: relative;
+	z-index: 1;
+	font-size: 15vw;
+	width: 100%;
+	height: 100vh;
+	font-weight: 800;
+	text-align: center;
+	padding: 6vh 21vw;
 }
