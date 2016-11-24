@@ -5,10 +5,10 @@
 	overflow: hidden;
 }
 #menu >article{
-	width: calc(50% - 2px);
-	display: inline-block;
+	width: 100%;
+	top: 0;
 	height: 100%;
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	transition: 1600ms all cubic-bezier(1,0.4,0.4,1) 0ms;
 }
@@ -20,35 +20,37 @@
 	 shape-inside:polygon(0vw 0vh, 25vw 0vh, 50vw 100vh, 0vw 100vh);
 	-webkit-clip-path: polygon(0vw 0vh, 25vw 0vh, 50vw 100vh, 0vw 100vh);
 }
-#menu.open >article:nth-child(3){
-	 shape-inside:polygon( 50vw 0vh, 50vw 100vh,0vw 100vh, 25vw 0vh);
-	-webkit-clip-path:polygon( 50vw 0vh, 50vw 100vh,0vw 100vh, 25vw 0vh);
+#menu.open >article:nth-child(1)>a>video{
+    left: 0vh;
 }
+#menu.open >article:nth-child(3){
+	shape-inside:polygon( 50vw 0vh, 50vw 100vh,0vw 100vh, 25vw 0vh);
+	-webkit-clip-path: polygon( 100vw 0vh, 100vw 100vh,50vw 100vh, 75vw 0vh);
+}
+#menu.open >article:nth-child(3)>a>video{
+	    right: 0vh;
+}
+ #menu.open >article:nth-child(3)>a{
+ 	position: relative;
+    left: 50vw;
+ 	}   
+
 #menu >article:nth-child(1){
 	 shape-inside:polygon(0vw 0vh, 0vw 0vh, 0vw 100vh, 0vw 100vh);;
 	     -webkit-clip-path: polygon(0vw 0vh, 0vw 0vh, 0vw 100vh, 0vw 100vh);
 }
 #menu >article:nth-child(3){
 	 shape-inside:polygon( 100vw -100vh, 50vw 100vh,50vw 100vh, 50vw 100vh);
-	-webkit-clip-path: polygon( 50vw 0vh, 50vw 100vh,50vw 100vh, 50vw 0vh);
+	-webkit-clip-path: polygon( 100vw 0vh, 100vw 100vh,100vw 100vh, 100vw 0vh);
 }
 #menu >article:nth-child(2){
 	position: absolute;
-	width: 760px;
-	z-index: 2;
-	left: 50%;
-	margin-left: -380px;
+	width: 50vw;
+	left: 25vw;
+	-webkit-clip-path: polygon(0vw 0vh, 50vw 0vh, 25vw 100vh, 0vw 0vh);
 }
-#menu >article:nth-child(2)>a:before{
-/* 	content: '';
-width: 0;
-z-index: -2;
-    position: absolute;
-height: 0;
-display: block;
-border-style: solid;
-   	border-width: 100vh 380px 0 380px;
-border-color: #fff transparent transparent transparent; */
+#menu >article:nth-child(2)>a{
+	width: 100%;
 }
 #menu >article:nth-child(2)>a>div{
 	vertical-align: top;
@@ -111,7 +113,7 @@ border-color: #fff transparent transparent transparent; */
     margin-top: -24px;
 }
 #menu >article>a{
-	width: 100%;
+	width: 50%;
 	height: 100%;
 	display: block;
 	display: table;
@@ -120,11 +122,9 @@ border-color: #fff transparent transparent transparent; */
 #menu >article>a>video{
 	position: absolute;
 	top: 0%;
-	right: 0;
 	min-width: 100%;
 	min-height: 100%;
-	width: auto;
-	height: 100vh;
+	width: 100wmax;
 	z-index: -1000;
 	overflow: hidden;
 	-webkit-filter: blur(0px) contrast(0.7);
