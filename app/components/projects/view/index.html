@@ -1,6 +1,6 @@
-<section id="menu">
+<section id="menu" [class]="this.classMenu">
 	<article>
-		<a [routerLink]="['/education']">
+		<a (click)="goTo('left')">
 			<div>
 				<button class="button">
 					<b>EDUCATION</b>
@@ -15,8 +15,8 @@
 	<article>
 		<a>		
 			<div>
-				<h1>David Dávila</h1>
-				<span id="menu">
+				<h1 [routerLink]="['/']">David Dávila</h1>
+				<span id="menuButton" [routerLink]="['/']">
 					<span></span>
 				</span>
 				<p>I´m a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus consectetur doloremque deleniti!</p>
@@ -29,10 +29,10 @@
 		
 	</article>
 	<article>
-		<a [routerLink]="['/works']">
+		<a (click)="goTo('right')">
 			<div>
 				<button class="button">
-					<b>WORKS</b>
+					<b>WORKFLOW</b>
 				</button>	
 			</div>	
 		
@@ -44,3 +44,4 @@
 	</article>
 	
 </section>
+<studies [hidden]="this.currentView != 'left' " (userUpdated)="userUpdated()"></studies>

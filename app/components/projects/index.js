@@ -11,10 +11,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var Projects = (function () {
     function Projects() {
+        this.classMenu = '';
+        this.currentView = '';
     }
     Projects.prototype.ngOnInit = function () {
-        var menu = document.getElementById('menu');
-        setTimeout(function () { menu.className = 'open'; }, 0);
+        var _this = this;
+        setTimeout((function () { _this.classMenu = 'open'; }).bind(this), 0);
+    };
+    Projects.prototype.goTo = function (classMenu) {
+        this.classMenu += ' ' + classMenu;
+        this.currentView = classMenu;
+        classMenu === 'left' ?
+            history.pushState({}, 'interview/studies', 'interview/studies')
+            :
+                classMenu === 'right' ?
+                    history.pushState({}, 'interview/studies', 'interview/workflow')
+                    :
+                        history.pushState({}, 'interview/studies', 'interview/myself');
+    };
+    Projects.prototype.userUpdated = function () {
+        this.classMenu = 'open';
+        this.currentView = '';
     };
     Projects = __decorate([
         core_1.Component({

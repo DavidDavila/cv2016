@@ -13,6 +13,7 @@ import { Interview }  from './views/interview/index';
 
 import { Menu } from './components/menu/index';
 import { Dropdown } from './components/dropdown/index';
+import { Studies } from './components/studies/index';
 import { Autocomplete } from './components/autocomplete/index';
 import { Projects } from './components/projects/index';
 
@@ -21,7 +22,7 @@ import { Routes } from './router';
  
 @NgModule({
   imports:      [ BrowserModule,  MaterialModule.forRoot(), FormsModule, RouterModule.forRoot(Routes)],
-  declarations: [ AppComponent, Menu, Home, Interview, Projects, Dropdown, Autocomplete ],
+  declarations: [ AppComponent, Menu, Home, Interview, Projects, Studies, Dropdown, Autocomplete ],
   bootstrap:    [ AppComponent ]
 })
  

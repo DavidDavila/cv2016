@@ -1,8 +1,8 @@
 #menu{
 	width: 100%;
 	height: 100vh;
-	max-height: 100vh;
-	overflow: hidden;
+	position: absolute;
+	z-index: -1;
 }
 #menu >article{
 	width: 100%;
@@ -11,6 +11,7 @@
 	position: absolute;
 	overflow: hidden;
 	transition: 1600ms all cubic-bezier(1,0.4,0.4,1) 0ms;
+	cursor: pointer;
 }
 #menu >article>a:hover>video{
 	-webkit-filter: blur(0px) contrast(1);
@@ -44,6 +45,7 @@
 	-webkit-clip-path: polygon( 100vw 0vh, 100vw 100vh,100vw 100vh, 100vw 0vh);
 }
 #menu >article:nth-child(2){
+	cursor: default;
 	position: absolute;
 	width: 50vw;
 	left: 25vw;
@@ -68,7 +70,7 @@
 	font-weight: 300;
 	text-transform: uppercase;
 }
-#menu >article:nth-child(2)>a>div>span#menu{
+#menu >article:nth-child(2)>a>div>span#menuButton{
 	width: 25px;
 	height: 25px;
 	padding:20px 0;
@@ -77,7 +79,7 @@
     cursor: pointer;
 	margin-bottom: 5vmax;
 }
-#menu >article:nth-child(2)>a>div>span#menu>span{
+#menu >article:nth-child(2)>a>div>span#menuButton>span{
 	display: block;
 	vertical-align: middle;
 	background-color: #d6a41d;
@@ -85,7 +87,7 @@
 	height: 2px;
 	position: relative;
 }
-#menu >article:nth-child(2)>a>div>span#menu>span:before{
+#menu >article:nth-child(2)>a>div>span#menuButton>span:before{
 	position: absolute;
 	width: 25px;
 	height: 2px;
@@ -95,7 +97,7 @@
 	transform: translateY(-5px);
 	background-color: #d6a41d;
 }
-#menu >article:nth-child(2)>a>div>span#menu>span:after{
+#menu >article:nth-child(2)>a>div>span#menuButton>span:after{
 	position: absolute;
 	width: 25px;
 	height: 2px;
@@ -109,8 +111,8 @@
 	position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -44px;
-    margin-top: -24px;
+    margin-left: -61px;
+    margin-top: -17px;
 }
 #menu >article>a{
 	width: 50%;
@@ -160,4 +162,24 @@
 }
 #menu.open  >article:nth-child(2)>a>div{
 	opacity: 1;
+}
+
+/* Left*/
+#menu.open.left >article:nth-child(1){
+    z-index: 1;
+    -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100VW 100vh, 0vw 100vh);
+
+}
+#menu.open.left >article:nth-child(1)>a>div{
+	opacity: 0;
+	transition: opacity 300ms;
+}
+#menu.open.right >article:nth-child(3){
+    z-index: 1;
+    -webkit-clip-path: polygon( 100vw 0vh, 100vw 100vh,0vw 100vh, 0vw 0vh);
+
+}
+#menu.open.right >article:nth-child(3)>a>div{
+	opacity: 0;
+	transition: opacity 300ms;
 }

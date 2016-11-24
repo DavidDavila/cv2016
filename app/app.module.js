@@ -18,8 +18,9 @@ var index_1 = require('./views/home/index');
 var index_2 = require('./views/interview/index');
 var index_3 = require('./components/menu/index');
 var index_4 = require('./components/dropdown/index');
-var index_5 = require('./components/autocomplete/index');
-var index_6 = require('./components/projects/index');
+var index_5 = require('./components/studies/index');
+var index_6 = require('./components/autocomplete/index');
+var index_7 = require('./components/projects/index');
 var router_2 = require('./router');
 var AppModule = (function () {
     function AppModule() {
@@ -27,7 +28,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, material_1.MaterialModule.forRoot(), forms_1.FormsModule, router_1.RouterModule.forRoot(router_2.Routes)],
-            declarations: [app_component_1.AppComponent, index_3.Menu, index_1.Home, index_2.Interview, index_6.Projects, index_4.Dropdown, index_5.Autocomplete],
+            declarations: [app_component_1.AppComponent, index_3.Menu, index_1.Home, index_2.Interview, index_7.Projects, index_5.Studies, index_4.Dropdown, index_6.Autocomplete],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
