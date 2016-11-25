@@ -66,7 +66,7 @@
 }
 @keyframes bg1{
  0% {
-	       background-position: -21vh -20.3vh;
+	    background-position: -14.1vw -20.3vh;
  }
  100% {
 	    background-position: 40% 0%;
@@ -74,7 +74,7 @@
 }
 @keyframes bg2{
  0% {
-	       background-position: -44vh -20.3vh;
+	    background-position: -26.1vw -20.3vh;
  }
  100% {
 	       background-position: 40% 30%;
@@ -82,7 +82,7 @@
 }
 @keyframes bg3{
  0% {
- 	    background-position: -67.5vh -20.3vh;
+ 	        background-position: -38vw -20.3vh;
    
  }
  100% {
@@ -92,7 +92,7 @@
 }
 @keyframes bg4{
  0% {
-	    background-position: -20.6vh -70.1vh;
+	    background-position: -14.15vw -70.1vh;
    
  }
  100% {
@@ -101,7 +101,7 @@
 }
 @keyframes bg5{
  0% {
-	   background-position: -44.1vh -70.1vh;
+	    background-position: -26.1vw -70.1vh;
  }
  100% {
       background-position: 17% 100%;
@@ -110,7 +110,7 @@
 }
 @keyframes bg6{
  0% {
-	   background-position: -67vh -70.1vh ;
+	    background-position: -38vw -70.1vh;
    
  }
  100% {
@@ -164,7 +164,7 @@
 	top: 0;
 	left: 25%;
 	background: #fff;
-	-webkit-clip-path:polygon(25vw -30vh, 6vw 50vh, 25vw 130vh, 44vw 50vh);
+	-webkit-clip-path:polygon(25vw -30vh, 5.5vw 50vh, 25vw 130vh, 44.5vw 50vh);
 }
 #studies >article:nth-child(2)>div{
 	padding: 3vw 8vw;
@@ -276,8 +276,8 @@
 	top: 0;
 	left: -12%;
 	-webkit-clip-path: polygon(0% 0%, 50% 100%, 50% 100%, 100% 0%);
-	/*background-color:rgba(214, 164, 29,0.15);*/
-	animation-name:bg1;
+	background-color:rgba(214, 164, 29,0.15); 
+	animation-name:bg1; 
 
 }
 
@@ -286,15 +286,15 @@
 	left: 16%;
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 50% 0);
 	animation-name:bg2;
-	/*background-color:rgba(214, 164, 29,0.2)*/
+
+	/* background-color:rgba(214, 164, 29,0.2) */
 }
 
 #studies >article:nth-child(1)>ul>li:nth-child(3){
 	top: 0;
 	right: 0;
 	-webkit-clip-path: polygon(0% 0%, 50% 100%, 50% 100%, 100% 0%);
-
-animation-name:bg3;
+	animation-name:bg3; 
 	/*background-color:rgba(214, 164, 29,0.3);*/
 
 }
@@ -304,8 +304,7 @@ animation-name:bg3;
 	left: -12%;
 	
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 50% 0%);
-
-animation-name:bg4;
+animation-name:bg4; 
 	/*background-color:rgba(214, 164, 29,0.4)*/
 }
 
@@ -313,8 +312,8 @@ animation-name:bg4;
 	bottom: 0;
 	left: 16%;
 		-webkit-clip-path: polygon(0% 0%, 50% 100%, 50% 100%, 100% 0%);
+	animation-name:bg5; 
 	
-	animation-name:bg5;
 		/*background-color:rgba(214, 164, 29,0.5)*/
 
 }
@@ -322,13 +321,11 @@ animation-name:bg4;
 #studies >article:nth-child(1)>ul>li:nth-child(6){
 	bottom: 0;
 	right: 0;
-	animation-name:bg6;
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 50% 0%);
-	
+	animation-name:bg6;
 	/*background-color:rgba(214, 164, 29,0.6)*/
 
 }
-
 
 
 
