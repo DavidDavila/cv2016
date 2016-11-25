@@ -1,3 +1,12 @@
+
+@keyframes init{
+ 0% {
+	    background-position: -14.1vw -20.3vh;
+ }
+ 100% {
+	    background-position: 40% 0%;
+ }
+}
 #menu{
 	width: 100%;
 	height: 100vh;
@@ -50,6 +59,12 @@
 	width: 50vw;
 	left: 25vw;
 	-webkit-clip-path: polygon(0vw 0vh, 50vw 0vh, 25vw 100vh, 0vw 0vh);
+	opacity: 1;
+	transition: opacity 600ms linear 1.3s;
+}
+#menu.open.left >article:nth-child(2){
+	opacity: 0;
+	transition: opacity 600ms linear 00ms;
 }
 #menu >article:nth-child(2)>a{
 	width: 100%;

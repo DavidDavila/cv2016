@@ -21,11 +21,11 @@ var Projects = (function () {
     Projects.prototype.goTo = function (classMenu) {
         this.classMenu += ' ' + classMenu;
         this.currentView = classMenu;
-        classMenu === 'left' ?
-            history.pushState({}, 'interview/studies', 'interview/studies')
+        classMenu === 'right' ?
+            history.pushState({}, 'interview/studies', 'interview/workflow')
             :
-                classMenu === 'right' ?
-                    history.pushState({}, 'interview/studies', 'interview/workflow')
+                classMenu === 'left' ?
+                    history.pushState({}, 'interview/studies', 'interview/studies')
                     :
                         history.pushState({}, 'interview/studies', 'interview/myself');
     };

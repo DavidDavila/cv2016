@@ -19,12 +19,12 @@ export class Projects {
 	goTo( classMenu:string ){
 		this.classMenu += ' ' + classMenu;
 		this.currentView = classMenu;
-		classMenu === 'left' ?
+		classMenu === 'right' ?
 
-			history.pushState({},'interview/studies','interview/studies')
+			history.pushState({},'interview/studies','interview/workflow')
 			:
-			classMenu === 'right' ?
-				history.pushState({},'interview/studies','interview/workflow')
+			classMenu === 'left' ?
+				history.pushState({},'interview/studies','interview/studies')
 				:
 				history.pushState({},'interview/studies','interview/myself')
 	}

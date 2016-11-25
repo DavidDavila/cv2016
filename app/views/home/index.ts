@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, Pipe, PipeTransform } from '@angular/core';
 import { Dropdown } from './../../components/dropdown/index';
 import { Router }   from '@angular/router';
 declare var skrollr: any;
@@ -51,7 +51,5 @@ export class Home  implements OnInit {
 		    }).bind(this),7);
 
 		}).bind(this),800);
-		
 	}
-
 }
