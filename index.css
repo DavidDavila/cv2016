@@ -81,8 +81,11 @@ h4{
     line-height: 2.6vw;
 }
 p{
-	    font-size: 1.2vw;
+    font-size: 1.2vw;
     line-height: 1.9vw;
+}
+b{
+    font-weight: bold;
 }
 a.md-primary.md-hue-1 {
     font-size: 1vw;
