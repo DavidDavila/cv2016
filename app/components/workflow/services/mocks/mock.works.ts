@@ -5,7 +5,7 @@ export const ALLWORKS: newWork[] = [
 	new newWork('Desarrollador FullStack','Mades Comunicación','Mades','Apr 2008','Aug 2008','Desarrollo y mantenimiento de servicios web para clientes de la empresa. Desarrollo de aplicaciones internas de gestión de procesos, elaboración y mantenimiento de bases de datos',[ 'Javascript','Jquery','Html','Css','Php','MySql'],
 		[{name:'Friologic',link:''},
 		{name:'Casa María',link:''},
-		{name:'Alboroque Tradición',link:''}])
+		{name:'Alboroque Tradición',link:''}]),
 
 	new newWork('Desarrollador FullStack','FIBGAR','FIBGAR','Nov 2012','Aug 2014',' Análisis, desarrollo y mantenimiento de proyectos web, participando en todas las etapas del ciclo de desarrollo de software en estrecha colaboración con el equipo de diseñadores, y periodistas. Tecnología WAMP, maquetación de páginas, resolución de errores encontrados, desarrollo de nuevos módulos,desarrollo de aplicaciones internas de procesos de gestión, conexión con APIs Facebook y Twitter, pruebas y validación, App Híbridas.',['JavaScript',' MVC IRIS',' Jquery',' Rest',' PhoneGap','HTML5',' CSS3',' Bootstrap',' Php',' MySql',' Sql Lite'],
 		[{name:'Fibgar.org',link:''},
