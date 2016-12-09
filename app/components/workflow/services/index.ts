@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { WorkModel as Film} from './../models/index';
 import { ALLWORKS } from './mocks/mock.works';
 
 @Injectable()
