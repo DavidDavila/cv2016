@@ -8,21 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var Autocomplete = (function () {
     function Autocomplete() {
     }
     Autocomplete.prototype.ngOnInit = function () {
     };
-    Autocomplete = __decorate([
-        core_1.Component({
-            selector: 'autocomplete',
-            templateUrl: './app/components/autocomplete/view/index.html',
-            styleUrls: ['./app/components/autocomplete/view/css/index.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Autocomplete);
     return Autocomplete;
 }());
+Autocomplete = __decorate([
+    core_1.Component({
+        selector: 'autocomplete',
+        templateUrl: './app/components/autocomplete/view/index.html',
+        styleUrls: ['./app/components/autocomplete/view/css/index.css']
+    }),
+    __metadata("design:paramtypes", [])
+], Autocomplete);
 exports.Autocomplete = Autocomplete;
 //# sourceMappingURL=index.js.map

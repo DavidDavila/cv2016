@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var Interview = (function () {
     function Interview() {
     }
@@ -16,14 +16,14 @@ var Interview = (function () {
         var body = document.getElementsByTagName('body')[0];
         body.style.height = null;
     };
-    Interview = __decorate([
-        core_1.Component({
-            templateUrl: './app/views/interview/view/index.html',
-            styleUrls: ['./app/views/interview/view/css/index.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Interview);
     return Interview;
 }());
+Interview = __decorate([
+    core_1.Component({
+        templateUrl: './app/views/interview/view/index.html',
+        styleUrls: ['./app/views/interview/view/css/index.css']
+    }),
+    __metadata("design:paramtypes", [])
+], Interview);
 exports.Interview = Interview;
 //# sourceMappingURL=index.js.map

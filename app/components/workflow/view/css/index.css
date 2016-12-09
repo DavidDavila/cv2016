@@ -190,7 +190,8 @@
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    margin-bottom: 5vmax;
+    margin-bottom: 7.9vw;
+
 }
 
 #workflow >article:nth-child(2)>div>span#close >span{
@@ -238,7 +239,7 @@
 
 #currentProjects>li {
     display: inline-block;
-    padding: 1.2vw 1.2vw 0;
+    padding: 1.2vw 0.9vw 0;
      
 }
 #currentProjects>li>a{
@@ -252,7 +253,6 @@
 #currentProjects>li>a.disabled{
 	opacity: 0.5;
     color: rgba(0,0,0,0.7);
-    text-decoration: line-through;
 }
 #workflow >article:nth-child(2)>div>div>div#info>span{
 
@@ -261,13 +261,14 @@
     font-size: 14px;
     font-style: italic;
     padding: 0 0.5vw;
-    margin-bottom: 1vw;
+    margin-bottom: 0.5vw;
     display: inline-block;
      animation-name: in;
 	animation-duration: 600ms;
 	animation-direction: normal;
 	animation-fill-mode: both; 
 	animation-delay: 0.1s;
+    font-weight: bold;
 }
 #workflow >article:nth-child(2)>div h2 {
     font-size: 1.7vw;
@@ -277,10 +278,10 @@
 	animation-direction: normal;
 	animation-fill-mode: both; 
 	animation-delay: 0.2s;
-    margin-bottom: 1vw;
+    margin-bottom: 0.5vw;
 }
 #workflow >article:nth-child(2)>div h3 {
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin:0 auto;
     margin-bottom: 2vw;
     max-width: 24vw;
@@ -314,11 +315,11 @@
 }
 #workflow >article:nth-child(2)>div>div>div#languages span {
     display: inline-block;
-    margin: 0 0.7vw;
-    font-size: 11px;
+    margin: 0 0.3vw;
+    font-size: 13px;
     font-weight: 500;
-
     line-height: 1.3vw;
+    color: #888888;
 }
 #workflow >article:nth-child(3){
 	width: 43%;
@@ -479,23 +480,22 @@ div#lineBar:before {
 	top: -50px !important;
 }
 #lineBar div{
-	cursor: pointer;
-	visibility: hidden;
-	position: absolute;
-	top: -1.9vw;
-	left: -1.8vw;
-	width: 7.5vw;
-	z-index: 1;
-	padding-bottom: 1vw;
-	padding-top: 4.5vw;
-	font-family: Arbutus Slab;
-	color: rgba(0,0,0,0.3);
-	font-size: 14px;
-	font-style: italic;
-	transition: visibility 00ms linear 0ms, color 300ms;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+    top: -1.9vw;
+    left: -1.8vw;
+    width: 7.5vw;
+    z-index: 1;
+    padding-bottom: 1vw;
+    padding-top: 4.5vw;
+    text-transform: uppercase;
+    color:transparent;
+    font-size: 14px;
+    transition: visibility 00ms linear 0ms, color 300ms linear 00ms;
 }
 #lineBar div:hover{
-	color:#d6a41d;
+	text-decoration: underline;
 	font-weight: 500;
 }
 #lineBar span:before{
@@ -534,8 +534,10 @@ div#lineBar.down span:before {
 	top: 45px;	
 }
 div#lineBar.down div {
+	
+    color: rgb(214, 164, 30);
 	visibility: visible;
-	transition: visibility 300ms linear 0ms, color 300ms linear 00ms;
+	transition: visibility 300ms linear 0ms, color 300ms linear 600ms;
 }
 div#lineBar.down:before{
 	opacity: 0;

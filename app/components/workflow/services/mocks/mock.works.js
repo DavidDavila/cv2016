@@ -1,5 +1,5 @@
 "use strict";
-var index_1 = require('./../../models/index');
+var index_1 = require("./../../models/index");
 exports.ALLWORKS = [
     new index_1.WorkModel('Desarrollador FullStack', 'Mades Comunicación', 'Mades', 'Apr 2008', 'Aug 2008', 'Desarrollo y mantenimiento de servicios web para clientes de la empresa. Desarrollo de aplicaciones internas de gestión de procesos, elaboración y mantenimiento de bases de datos', ['Javascript', 'Jquery', 'Html', 'Css', 'Php', 'MySql'], [{ name: 'Friologic', link: '' },
         { name: 'Casa María', link: '' },

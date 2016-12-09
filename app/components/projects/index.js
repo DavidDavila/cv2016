@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var Projects = (function () {
     function Projects() {
         this.classMenu = '';
@@ -33,15 +33,15 @@ var Projects = (function () {
         this.classMenu = 'open';
         this.currentView = '';
     };
-    Projects = __decorate([
-        core_1.Component({
-            selector: 'projects',
-            templateUrl: './app/components/projects/view/index.html',
-            styleUrls: ['./app/components/projects/view/css/index.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Projects);
     return Projects;
 }());
+Projects = __decorate([
+    core_1.Component({
+        selector: 'projects',
+        templateUrl: './app/components/projects/view/index.html',
+        styleUrls: ['./app/components/projects/view/css/index.css']
+    }),
+    __metadata("design:paramtypes", [])
+], Projects);
 exports.Projects = Projects;
 //# sourceMappingURL=index.js.map

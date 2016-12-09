@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var mock_works_1 = require('./mocks/mock.works');
+var core_1 = require("@angular/core");
+var mock_works_1 = require("./mocks/mock.works");
 var WorkService = (function () {
     function WorkService() {
     }
@@ -19,11 +19,11 @@ var WorkService = (function () {
     WorkService.prototype.findWork = function (i) {
         return this.getAllWorks()[i];
     };
-    WorkService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], WorkService);
     return WorkService;
 }());
+WorkService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], WorkService);
 exports.WorkService = WorkService;
 //# sourceMappingURL=index.js.map

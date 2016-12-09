@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var Menu = (function () {
     function Menu() {
         this.menuList = [
@@ -16,15 +16,15 @@ var Menu = (function () {
             { name: 'Otros Proyectos', link: '/other-projects' }
         ];
     }
-    Menu = __decorate([
-        core_1.Component({
-            selector: 'menu',
-            templateUrl: './app/components/menu/view/index.html',
-            styleUrls: ['./app/components/menu/view/css/index.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Menu);
     return Menu;
 }());
+Menu = __decorate([
+    core_1.Component({
+        selector: 'menu',
+        templateUrl: './app/components/menu/view/index.html',
+        styleUrls: ['./app/components/menu/view/css/index.css']
+    }),
+    __metadata("design:paramtypes", [])
+], Menu);
 exports.Menu = Menu;
 //# sourceMappingURL=index.js.map

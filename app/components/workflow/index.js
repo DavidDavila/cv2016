@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var index_1 = require('./services/index');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var index_1 = require("./services/index");
 var Workflow = (function () {
     function Workflow(_router, _workService) {
         this._router = _router;
@@ -41,20 +41,20 @@ var Workflow = (function () {
     Workflow.prototype.blur = function (index, classElement) {
         this.getElement(index, classElement).className = classElement;
     };
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], Workflow.prototype, "userUpdated", void 0);
-    Workflow = __decorate([
-        core_1.Component({
-            selector: 'work-flow',
-            templateUrl: './app/components/workflow/view/index.html',
-            styleUrls: ['./app/components/workflow/view/css/index.css'],
-            providers: [index_1.WorkService]
-        }), 
-        __metadata('design:paramtypes', [router_1.Router, index_1.WorkService])
-    ], Workflow);
     return Workflow;
 }());
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], Workflow.prototype, "userUpdated", void 0);
+Workflow = __decorate([
+    core_1.Component({
+        selector: 'work-flow',
+        templateUrl: './app/components/workflow/view/index.html',
+        styleUrls: ['./app/components/workflow/view/css/index.css'],
+        providers: [index_1.WorkService]
+    }),
+    __metadata("design:paramtypes", [router_1.Router, index_1.WorkService])
+], Workflow);
 exports.Workflow = Workflow;
 //# sourceMappingURL=index.js.map
